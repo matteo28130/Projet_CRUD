@@ -2,12 +2,13 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="../assets/css/style.css" / >
         <title>CRUD de Matteo</title>
     </head>
 
     <body>
 
-        <a href='../index.php'></a></br>
+    <a class='accueil' href='../index.php'>Accueil</a></br>
 
         Créer un utilisateur :
 

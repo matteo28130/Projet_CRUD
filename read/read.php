@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="../assets/css/style.css" / >
         <title>CRUD de Matteo</title>
     </head>
 
@@ -12,7 +13,7 @@
         $datas = include 'traitement_read.php';
         if(count($datas) > 0) {
 
-            echo "<div style='text-align: center;'><a style='font-size:35px; text-decoration: none ; color: midnightblue;' href='../index.php'>Accueil</a></br></div>";
+            echo "<a class='accueil' href='../index.php'>Accueil</a></br>";
 
             echo "Liste des utilisateurs : </br></br>";
 
