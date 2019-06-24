@@ -8,9 +8,9 @@
 
     <body>
 
-    <a class='accueil' href='../index.php'>Accueil</a></br>
+    <a class='accueil' href='../index_back.php'>Accueil</a></br>
 
-        Supprimer l'utilisateur :
+        Supprimer l'utilisateur dont le login est :
 
         <?php
             require_once "../connexion/connexion.php";
@@ -22,7 +22,7 @@
                 $result->bindParam(':id',$_GET['id']);
                 $result->execute();
                 $tableau = $result->fetch(PDO::FETCH_ASSOC);
-                echo $tableau['surname'].' '.$tableau['name'];
+                echo $tableau['login'];
             }
 
         ?>
@@ -31,6 +31,7 @@
             <input type='text' name='id' value="<?php echo $tableau['id'];?>" style="display: none;"/>
             <p>Veuillez confirmer la suppression de l'utilisateur !</p>
             <p><input type = 'submit' value ='OK'></p>
+            <div><button type='button'><a style='text-decoration: none; color: black' href='../read/read.php'>Retour</a></button></div>
         </form>
 
     </body>

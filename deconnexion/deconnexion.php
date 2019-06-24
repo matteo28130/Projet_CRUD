@@ -1,7 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: omar
- * Date: 24/06/19
- * Time: 15:12
- */
+    session_start();
+
+    sleep(1);
+
+    session_destroy();
+
+    header('Location:../index_back.php');
+
+
+
+
