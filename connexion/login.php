@@ -42,10 +42,20 @@
     $_SESSION['surname']=$tableau['surname'];
     $_SESSION['birthday']=$tableau['birthday'];
 
-    setcookie('c_login',$_SESSION['login'],time()+3600);
-    setcookie('c_name',$_SESSION['name']);
-    setcookie('c_surname',$_SESSION['surname']);
-    setcookie('c_birthday',$_SESSION['birthday']);
+
+
+    if (isset($_SESSION['login'])) {
+
+        setcookie('c_login', $_SESSION['login'], time() + 3600, "/");
+        setcookie('c_name', $_SESSION['name'], time() + 3600, "/");
+        setcookie('c_surname', $_SESSION['surname'], time() + 3600, "/");
+        setcookie('c_birthday', $_SESSION['birthday'], time() + 3600, "/");
+
+    }
+
+
+
+
 
 
 

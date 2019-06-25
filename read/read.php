@@ -1,7 +1,6 @@
 <?php
 
     session_start();
-    echo $_COOKIE['c_login'];
 
 ?>
 

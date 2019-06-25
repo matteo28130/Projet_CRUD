@@ -23,7 +23,7 @@
 
         <?php
             if (isset($_SESSION['login'])){
-                echo "Vous etes connecté en tant que : ".$_SESSION['login'];
+                echo "Vous etes connecté en tant que : ".$_COOKIE['c_login'];
             }
 
         ?>
