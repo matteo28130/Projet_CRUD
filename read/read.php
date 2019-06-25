@@ -38,9 +38,11 @@
                   </p>";
 
             echo "<div style='text-align: center;'><button type='button'><a style='text-decoration: none; color: #1616ee' href='../create/register.php'>Inscription</a></button></div>";
+
         }
 
 
+        echo "<div><button type='button'><a style='text-decoration: none; color: black' href='../index_back.php'>Retour</a></button></div>";
 
         ?>
 

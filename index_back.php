@@ -28,24 +28,24 @@
 
         ?>
 
-        <div class="container-pdf">
+        <div class="home">
 
-            <ul>
-                <li><a class="lien" href='create/register.php'>Cliquez ici s'incrire</a></li>
+
+                <a class="lien" href='create/register.php'>Cliquez ici s'incrire</a>
 
                 <?php
 
                 if (!isset($_SESSION['login'])) {
 
-                    echo "<li><a class='lien' href='connexion/access.php'>Cliquez ici se connecter</a></li>";
+                    echo "<a class='lien' href='connexion/access.php'>Cliquez ici se connecter</a>";
 
                 } else {
-                    echo "<li><a class='lien' href='deconnexion/deconnexion.php'>Cliquez ici pour vous deconnecter</a></li>";
+                    echo "<a class='lien' href='deconnexion/deconnexion.php'>Cliquez ici pour vous deconnecter</a>";
 
 
                     if ($_SESSION['login'] == "Matteo_28") {
 
-                        echo "<li><a class='lien' href='read/read.php'>Cliquez ici pour afficher la liste des utilisateurs</a></li>";
+                        echo "<a class='lien' href='read/read.php'>Cliquez ici pour afficher la liste des utilisateurs</a>";
 
 
                     } else {
@@ -54,7 +54,7 @@
 
                     }
                 }
-                
+
 
                 ?>
             </ul>
